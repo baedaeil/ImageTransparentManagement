@@ -1,5 +1,5 @@
 # ImageTransparentManagement
- Image transparent pixel management (using OpenCV)
+ Image transparent pixel management (Implement with OpenCV)
 
 
 #Implementation list (Update)

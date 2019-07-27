@@ -4,9 +4,9 @@
 
 class Message {
 private:
-	std::string credit_name = "none";
-	std::string blogURL = "none";
-	std::string version = "1.0";
+	std::string credit_name = ".";
+	std::string blogURL = ".";
+	std::string version = "1.0.2";
 
 public:
 	void message_Credit() {

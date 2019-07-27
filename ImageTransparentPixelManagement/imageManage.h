@@ -48,7 +48,8 @@ public:
 
 	void saveResizeImage() {
 		std::string temp = location;
-		temp.insert(textIndex + 1, "convert_");
+		if(textIndex != 0) temp.insert(textIndex + 1, "convert_");
+		else temp.insert(textIndex, "convert_");
 		imwrite(temp, resize_img);
 	}
 };

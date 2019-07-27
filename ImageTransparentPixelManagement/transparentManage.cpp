@@ -14,14 +14,24 @@ void main() {
 
 		while (true) {
 			cout << "Input image file location : ";
-			cin >> location;
+			getline(cin, location);
 
+			while (location.find("\"") != string::npos)
+				location.replace(location.find("\""), 1, "\0");
+
+			while (location.find("\\") != string::npos) {
+				conv_text_index = location.find("\\");
+				location.replace(conv_text_index, 1, "/");
+			}
+			/*
 			for (int count = 0; count < location.length(); count++) {
 				if (location[count] == '\\') {
 					location[count] = '/';
 					conv_text_index = count;
 				}
 			}
+			*/
+
 			ImageManage temp(location, conv_text_index);
 			manage = temp;
 

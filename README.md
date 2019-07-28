@@ -9,6 +9,10 @@
  - import transparent image only. (four channels)
  - Eliminate transparency according to trackbar adjustment values.
  - Conversion image can be saved.
+ 
+ 07.28 2019 (version 1.0.?)
+ - Troubleshooting problems with the space write paths
+ - Instead, it is now impossible to enter a continuous path.
 
 
 # How to use
